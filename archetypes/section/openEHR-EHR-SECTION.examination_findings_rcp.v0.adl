@@ -1,0 +1,53 @@
+﻿archetype (adl_version=1.4; uid=d8521a0e-eb8d-46e1-ac77-c49a8edbec18)
+	openEHR-EHR-SECTION.examination_findings_rcp.v0
+
+concept
+	[at0000]	-- Examination findings
+language
+	original_language = <[ISO_639-1::en]>
+description
+	original_author = <
+		["name"] = <"Ian McNicoll">
+		["organisation"] = <"freshEHR Clinical Informatics, UK">
+		["email"] = <"ian@freshehr.com">
+		["date"] = <"2014-05-23">
+	>
+	details = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"To organise Examination findings details within a standardised record subheading as recommended by the UK Academy of Royal Colleges (AoMRC).">
+			use = <"">
+			misuse = <"">
+			copyright = <"© Clinical Models UK, openEHR Foundation">
+		>
+	>
+	lifecycle_state = <"in_development">
+	other_contributors = <>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["references"] = <"Health and Social Care Information Centre, Academy of Medical Royal Colleges (2013) Standards for the Clinical Structure and Content of Patient Records. HSCIC, Leeds.
+Available from: https://www.rcplondon.ac.uk/sites/default/files/standards-for-the-clinical-structure-and-content-of-patient-records.pdf [Accessed July 22, 2014]">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"B160B2E7F8312D4859498803FF0BA212">
+		["build_uid"] = <"fbbe0db8-6b0d-4167-b384-af0c0cfec6f7">
+		["revision"] = <"0.0.1-alpha">
+	>
+
+definition
+	SECTION[at0000] matches {*}    -- Examination findings
+
+
+ontology
+	term_definitions = <
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Examination findings">
+					description = <"Examination findings heading (AoMRC).">
+				>
+			>
+		>
+	>
